@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>main</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>경기도 지역화폐 G갑</header>
+        <section>
+            <h1 style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
+            Login</h1>
+            <form method="POST" action="/main">
+                <label for="fname">ID</label>
+                <input type="text" id="fname" name="id" placeholder="ID">
+            
+                <label for="lname">PASSWORD</label>
+                <input type="text" id="lname" name="passowrd" placeholder="PASSWORD">
+                <input type="submit" value="Login">
+              </form>
+            <form method="GET" action="/signup">
+                <input type="submit" value="Signup">
+            </form>
+        </section>
+        <footer>
+            <p>Team D&D</p>
+            <span>@2020 KBCI</span>
+        </footer>
+    </div>
+</body>
+</html>

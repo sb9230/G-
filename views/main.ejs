@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>main</title>
+</head>
+<script>
+    function charge(){
+        location.href("/charge");
+    }
+    function exchange(){
+        location.href("/exchange");
+    }
+</script>
+<body>
+    <div class="wrap">
+        <header>경기도 지역화폐 G갑</header>
+        <section>
+            <div class="test1">
+                <div class="test1_1">
+                    <img src="./images/wallet.png">
+                </div>    
+                <span class="wallet"><strong>경기도</strong> 님의 지갑</span>
+                <br>
+                <span class="wallet">123abc456fed8987ac87</span>
+            </div>
+            <div class="test2">
+                <p>나의 지역화폐</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="td1">
+                                <img src="./images/suwon.jpg">
+                            </td>
+                            <td>
+                                <span>수원페이</span>
+                            </td>
+                            <td class="tb3">
+                                <span id="won"><!--db값-->100,000 원</span>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <td id="td1">
+                                <img src="./images/anyang.jpg">
+                            </td>
+                            <td>
+                                <span>안양페이</span>
+                            </td>
+                            <td class="tb3">
+                                <span id="won"><!--db값-->50,000 원</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="td1">
+                                <img src="./images/anseong.gif">
+                            </td>
+                            <td>
+                                <span>안성페이</span>
+                            </td>
+                            <td  class="tb3">
+                                <span id="won"><!--db값-->70,000 원</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="test2_1">
+
+                </div>
+            </div>
+            <div class="test3">
+                <a href="/charge"><button class="btn">화폐 충전</button></a>
+               <a href="/exchange"><button class="btn" onclick="exchange()">화폐 교환</button></a>
+            </div>
+        </section>
+        <footer>
+            <p>Team D&D</p>
+            <span>@2020 KBCI</span>
+        </footer>
+    </div>
+</body>
+</html>
