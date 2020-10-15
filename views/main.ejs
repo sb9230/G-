@@ -6,25 +6,28 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>main</title>
 </head>
-<script>
-    function charge(){
-        location.href("/charge");
-    }
-    function exchange(){
-        location.href("/exchange");
-    }
-</script>
 <body>
     <div class="wrap">
         <header>경기도 지역화폐 G갑</header>
         <section>
             <div class="test1">
-                <div class="test1_1">
-                    <img src="./images/wallet.png">
-                </div>    
-                <span class="wallet"><strong>경기도</strong> 님의 지갑</span>
-                <br>
-                <span class="wallet">123abc456fed8987ac87</span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">
+                                <div class="forIcon">
+                                     <img src="data:image/png;base64,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" />
+                                </div>
+                            </td>
+                            <td class="row2" id="userWallet"><strong>경기도</strong> 님의 지갑</td>
+                        </tr>
+                        <tr>
+                            <td class="row2" id="userAddress">
+                                <strong>123456789abcdef</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div class="test2">
                 <p>나의 지역화폐</p>
@@ -66,7 +69,6 @@
                     </tbody>
                 </table>
                 <div class="test2_1">
-
                 </div>
             </div>
             <div class="test3">
