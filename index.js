@@ -17,6 +17,9 @@ app.get('/', function(req, res){
 })
 
 app.post("/main", function(req, res){
+    const id = req.body.id;
+    const pass = req.body.password;
+    console.log("id =", id , "pass = ", pass);
     res.render("main");
 })
 
@@ -25,6 +28,9 @@ app.get("/signup", function(req, res){
 })
 
 app.post("/submit", function(req, res){
+    const id = req.body.id;
+    const pass = req.body.password;
+    console.log("id =", id , "pass = ", pass);
     res.redirect("/");
 })
 
@@ -40,7 +46,11 @@ app.get("/payment", function(req, res){
     res.render("payment")
 })
 app.post("/payment", function(req, res){
-    
+    const id = req.body.id;
+    const pass = req.body.password;
+    const cost = req.body.cost;
+    console.log("id = ", id , "pass = ", pass, "cost = ", cost);
+    res.render("main");
 })
 
 server.listen(port, function () {
