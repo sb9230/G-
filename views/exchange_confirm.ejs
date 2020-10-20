@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>exchange</title>
+    <script>
+        function viewLayer(){
+            document.getElementById("popUp").style.display='inline'
+        }
+        function cancel() {
+            document.getElementById("popUp").style.display="none"
+        }
+        function viewLayer2() {
+            document.getElementById("popUp").style.display="none"
+            document.getElementById("popUp2").style.display="inline"
+        }
+        function cancel2() {
+            document.getElementById("popUp2").style.display="none"
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>경기도 지역화폐 G갑</header>
+        <section>
+            <div id="popUp">
+                <div class="popUpHead"></div>
+                <div class="popUpSec">
+                    <div><strong>알림</strong></div>
+                    <p><!--db값 (ㅇㅇ페이)-->수원페이 <!--db값 (얼마)--> 100,000원 과
+                    성남페이 100,000원을<br> 교환하시겠습니까?</p>
+                    <a href="/exchange_confirm2"><button>예</button></a> <!--예 누르면 트랜잭션 일어나야 합니다. 일단 펑션으로 넘어가는걸로 했습니다.-->
+                    <a href="/exchange"><button id="cancel">아니오</button></a>
+                </div>
+                <div class="popUpBot"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

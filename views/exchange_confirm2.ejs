@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>exchange</title>
+    <script>
+        function viewLayer(){
+            document.getElementById("popUp").style.display='inline'
+        }
+        function cancel() {
+            document.getElementById("popUp").style.display="none"
+        }
+        function viewLayer2() {
+            document.getElementById("popUp").style.display="none"
+            document.getElementById("popUp2").style.display="inline"
+        }
+        function cancel2() {
+            document.getElementById("popUp2").style.display="none"
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>경기도 지역화폐 G갑</header>
+        <section>
+            <div id="popUp2">
+                <div class="popUpHead"></div>
+                <div class="popUpSec">
+                    <div><strong>알림</strong></div>
+                    <p>교환하였습니다.</p>
+                    <a href="/main"><button class="layerBtn">확인</button></a> <!--확인 후 창을 어케 꺼야 될지 몰라서 일단 없애는 걸로 넣었습니다.-->
+                </div>
+                <div class="popUpBot"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

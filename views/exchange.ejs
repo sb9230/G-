@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>exchange</title>
+    <script>
+        function viewLayer(){
+            document.getElementById("popUp").style.display='inline'
+        }
+        function cancel() {
+            document.getElementById("popUp").style.display="none"
+        }
+        function viewLayer2() {
+            document.getElementById("popUp").style.display="none"
+            document.getElementById("popUp2").style.display="inline"
+        }
+        function cancel2() {
+            document.getElementById("popUp2").style.display="none"
+        }
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -13,7 +28,7 @@
         <section>
             <div class="exchangePay">
             <p class="p1">보유한 지역화폐</p>
-                <select class="custom-select">
+                <select class="custom-select" id="selectPay">
                     <option selected >수원페이</option>
                     <option value="1" selected >안양페이</option>
                     <option value="2" selected >안성페이</option>
@@ -22,7 +37,7 @@
             </div>
             <div class="exchangePay" id="expay">
               <p class="p1">교환하려는 지역화폐</p>
-              <select class="custom-select">
+              <select class="custom-select" id="selectPay2">
                   <option selected >과천페이</option>
                   <option value="1" selected >김포페이</option>
                   <option value="2" selected >화성페이</option>
@@ -30,11 +45,11 @@
                   <option value="4" selected >광명페이</option>
                   <option value="5" selected >의왕페이</option>
                 </select>
-                <input id="exchangeMoney" type="number" 
-    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="충전할 금액을 입력해주세요."/>
+                <input id="exchangeMoney" type="text" 
+    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="교환할 금액을 입력해주세요."/>
             </div>
             <div class="exbtn">
-                <button>교환하기</button>
+                <a href="/exchange_confirm"><button class="exchangeBtn">교환하기</button></a>
             </div>
         </section>
     </div>

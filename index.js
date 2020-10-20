@@ -16,6 +16,10 @@ app.get('/', function(req, res){
     res.render('login');
 })
 
+app.get("/main", function(req, res){
+    res.render("main");
+})
+
 app.post("/main", function(req, res){
     const id = req.body.id;
     const pass = req.body.password;
@@ -38,8 +42,24 @@ app.get("/charge", function(req, res){
     res.render("charge");
 })
 
+app.get("/charge_confirm", function(req, res){
+    res.render("charge_confirm");
+})
+
+app.get("/charge_confirm2", function(req, res){
+    res.render("charge_confirm2");
+})
+
 app.get("/exchange", function(req, res){
     res.render("exchange");
+})
+
+app.get("/exchange_confirm", function(req, res){
+    res.render("exchange_confirm");
+})
+
+app.get("/exchange_confirm2", function(req, res){
+    res.render("exchange_confirm2");
 })
 
 app.get("/payment", function(req, res){
